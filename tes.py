@@ -1,7 +1,7 @@
 import pandas as pd
 
 # File path
-file_path = "tokopedia_skipped.xlsx"
+file_path = "your_file.xlsx"
 
 # Read the skipped lines from the Excel file
 df_skipped = pd.read_excel(file_path)
@@ -30,4 +30,4 @@ df_processed = pd.DataFrame(parsed_data)
 df_sorted = df_processed[df_processed["EMAIL"].str.contains("@")]
 
 # Export the processed DataFrame to an Excel file
-df_sorted.to_excel("tokopedia_processed.xlsx", index=False)
+df_sorted.to_excel("output.xlsx", index=False)
